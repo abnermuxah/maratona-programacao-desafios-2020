@@ -1,6 +1,7 @@
 N =  float(input())
-#N = 576.63
+#N = 576.73
 #N = 4
+#N = 91.01
 if (0 <= N <= 1000000.00):
     NOTAS = [100, 50, 20, 10, 5, 2]
     print("NOTAS: ") #TEM QUE TA IGUAL A SAIDA DO PROBLEMA
