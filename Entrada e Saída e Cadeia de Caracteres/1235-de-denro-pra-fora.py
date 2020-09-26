@@ -15,7 +15,8 @@ for i in range (num_linhas):
         texto2 = texto2[::-1]
 
         # juntar as duas strings
-        print(texto1 + texto2)
+        texto = texto1 + texto2
+        print(texto)
 
         #pronto ta funcionando caraca! 
 
