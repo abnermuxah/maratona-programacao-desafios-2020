@@ -1,8 +1,7 @@
+tam = 4 # matriz é sempre quadrada
 op = input()
 matriz=[]
-tam = 12 # matriz é sempre quadrada
 # ler os valores da matriz
-
 for i in range(tam):
     lista = []
     for j in range(tam):
@@ -21,7 +20,7 @@ if (op == 'S'):
     # exibir a soma total acima da diagonal principal
     print("{:.1f}".format(total))
 # se M então calcular media acima da diagnonal principal
-elif (op=='M'):
+elif (op == 'M'):
     total = 0
     for i in range(tam):
         for j in range(tam):
@@ -29,4 +28,3 @@ elif (op=='M'):
                 total += matriz[i][j]
     total = total/(tam*tam)
     print("{:.1f}".format(total))
-    # mostrar o resultado final
