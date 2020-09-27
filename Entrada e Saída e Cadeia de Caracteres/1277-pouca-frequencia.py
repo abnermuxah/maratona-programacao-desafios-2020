@@ -1,3 +1,4 @@
+#incompleto e nao ta funcionando
 T = int(input()) # casos de testes
 
 for i in range(T):
