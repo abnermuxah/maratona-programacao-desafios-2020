@@ -11,29 +11,29 @@ if (1 <= T <= 100):
     for i in range(len(jogadas)):
         analise = str(jogadas[i]).split() # dividir a string i em 2 e depois analizar
         if (analise[0] == 'tesoura' and analise[1] == 'papel'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'papel' and analise[1] == 'pedra'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'pedra' and analise[1] == 'lagarto'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'lagarto' and analise[1] == 'Spock'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'Spock' and analise[1] == 'tesoura'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'tesoura' and analise[1] == 'lagarto'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'lagarto' and analise[1] == 'papel'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'papel' and analise[1] == 'Spock'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'Spock' and analise[1] == 'pedra'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == 'pedra' and analise[1] == 'tesoura'):
-            print('Caso #'+ str(i+1) + ': Bazinga! ')
+            print('Caso #'+ str(i+1) + ': Bazinga!')
         elif (analise[0] == analise[1]):
-            print('Caso #'+ str(i+1) + ': De Novo! ')
+            print('Caso #'+ str(i+1) + ': De novo!')
         else:
-            print('Caso #'+ str(i+1) + ': Raj trapaceou! ')
+            print('Caso #'+ str(i+1) + ': Raj trapaceou!')
         
 
 
