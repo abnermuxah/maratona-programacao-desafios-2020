@@ -1,21 +1,30 @@
-#incompleto e nao ta funcionando
-T = int(input()) # casos de testes
-
-for i in range(T):
-    N = int(input()) # numero de estudantes da turma ?
-    if (0 <= N <=100):  # minimo 0 maximo 100 estudantes (só cabe 100 alunos)
-        nome = [] # lista com os nomes dos alunos
-        freq = [] # lista com a frequencia do respectivo aluno i
-        for i in range(N): # cadastrar informação do estudante i até N
-            _nome = input() # variavel nome (auxiliar)
-            if len(_nome) < 100 and _nome.isalpha(): # só aceita para cada nome de estudante 100 caractere e A a Z 
-                nome.append(_nome)
-            else:
-                print("deu ruim, teu nome nao eh com numero nem é gigante")
-                break
-            _freq = input() # cadastrar frequencia
-            for i in range(len(freq)) # nao entendi aqui sou eu quem escolho a quantidade de frequencia? é aleatório
-
+T = int(input())
+saida = []
+for n in range(T):
+    qtd_estudantes = int(input())
+    _nome = str(input()) # lista com os nomes dos alunos
+    _freq = str(input()) # lista com a frequencia do respectivo aluno i
+    nome = _nome.split(" ")
+    freq = _freq.split(" ")
+    aprovados = []
+    for i in range(qtd_estudantes):
+        total = len(freq[i])
+        A = freq[i].count("A") # Ausente
+        P = freq[i].count("P") # Presente
+        M = freq[i].count("M") # Atestado
+        total = total - M
+        if (P/total < 0.75):
+            aprovados.append(nome[i])
+    if len(aprovados) == 0:
+        saida.append(" ")
     else:
-        print("numero de estudantes invalido tente de novo")
-print(nome)
+        saida.append(aprovados)
+# se a lista de aprovados for vazia, coloca um valor vazio
+# se a lista aprovados tiver negoço, dá um append
+for i in range(len(saida)):
+    for j in range(len(saida[i])):
+        if len(saida[i])>1:
+            print(saida[i][j], end=" ")
+        else:
+            print(saida[i][j])
+
