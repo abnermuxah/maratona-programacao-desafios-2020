@@ -7,7 +7,7 @@ while (T > 0):
         notas[id] = int(notas[id])
     tot = 0
     notas_ord = sorted(notas) # ordenar as notas
-    notas_ord.reverse()
+    notas_ord.reverse() 
     for id, i in enumerate(notas):
         if (notas[id] == notas_ord[id]):
             tot = tot + 1

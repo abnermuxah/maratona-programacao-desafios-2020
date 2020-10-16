@@ -10,7 +10,6 @@
 #frase = "cap-one-best-opinion-language"
 
 #frase = "Ana-number-once-a-night"
-num = 0
 while True:
     frase = str(input())
     x = frase.split("-")
@@ -28,8 +27,8 @@ while True:
         if (x[i][-1] == 'l' or x[i][0] == 'l'):
             saida.append("l")
     
-
-    if saida.count("c") >= 1 and saida.count("o") >= 2 and saida.count("b") >= 1 and saida.count("l") >= 1: 
+    _saida = "".join(saida)
+    if saida.count("c") >= 1 and saida.count("o") >= 2 and saida.count("b") >= 1 and saida.count("l") >= 1 or saida == "cobol": 
         print("GRACE HOPPER")
     else:
         print("BUG")
